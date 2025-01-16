@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christy's Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page">
+        <h2>Welcome to Christy's Personal Bank</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="error-message" style="color:red; display:none;">Invalid username or password.</div>
+    </div>
+
+    <!-- Account Page -->
+    <div id="account-page" style="display:none;">
+        <h2>Welcome, <span id="account-name"></span></h2>
+        <p>Balance: $<span id="account-balance">0</span></p>
+
+        <h3>Deposit Money</h3>
+        <input type="number" id="deposit-amount" placeholder="Amount to deposit">
+        <button onclick="deposit()">Deposit</button>
+
+        <h3>Withdraw Money</h3>
+        <input type="number" id="withdraw-amount" placeholder="Amount to withdraw">
+        <button onclick="withdraw()">Withdraw</button>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
