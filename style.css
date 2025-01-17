@@ -9,7 +9,12 @@ body {
     background-color: #f4f4f4;
 }
 
-#login-page, #account-page {
+#auth-container {
+    display: flex;
+    gap: 20px;
+}
+
+#login-section, #signup-section, #account-page {
     text-align: center;
     width: 300px;
     padding: 20px;
